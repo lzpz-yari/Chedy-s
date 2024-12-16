@@ -60,6 +60,59 @@ Los usos de este sistema son específicos y concretos, ya que se ha definido dir
 | `JComboBox`             | Permite al usuario seleccionar una opción de una lista desplegable.                                  |
 ## Metodos
 
+| **Método** | **Propósito** |
+|------------|---------------|
+| `getInstance()` | Implementa el patrón Singleton para asegurar que solo una instancia de la clase `Conexion` sea creada. |
+| `getConnection()` | Devuelve la conexión actual a la base de datos. |
+| `reconnect()` | Cierra la conexión actual y la vuelve a abrir para reestablecer la conexión a la base de datos. |
+| `close()` | Cierra la conexión a la base de datos si está abierta. |
+| `insertarAdministrador()` | Inserta un nuevo administrador en la base de datos. |
+| `actualizarAdministrador()` | Actualiza la información de un administrador existente. |
+| `eliminarAdministrador()` | Elimina un administrador de la base de datos. |
+| `obtenerAdministradores()` | Obtiene todos los administradores de la base de datos. |
+| `buscarAdministradorPorID()` | Busca un administrador por su ID. |
+| `insertarCajero()` | Inserta un nuevo cajero en la base de datos para agregarlo a la tabla `cajeros`. |
+| `actualizarCajero()` | Actualiza la información de un cajero existente en la tabla `cajeros`. |
+| `eliminarCajero()` | Elimina un cajero de la base de datos y lo quita de la tabla `cajeros`. |
+| `obtenerCajeros()` | Obtiene todos los cajeros de la base de datos y recupera todos los registros de la tabla `cajeros`. |
+| `buscarCajeroPorID()` | Busca un cajero específico por su ID en la tabla `cajeros`. |
+| `actualizarCliente()` | Actualiza la información de un cliente existente en la tabla `cliente`. |
+| `eliminarCliente()` | Elimina un cliente de la base de datos y lo quita de la tabla `cliente`. |
+| `obtenerClientes()` | Obtiene todos los clientes de la base de datos y recupera todos los registros de la tabla `cliente`. |
+| `buscarClientePorID()` | Busca un cliente específico por su ID en la tabla `cliente`. |
+| `insertarDevolucion()` | Inserta una nueva devolución en la base de datos para agregarla a la tabla `devoluciones`. |
+| `actualizarDevolucion()` | Actualiza la información de una devolución existente en la tabla `devoluciones`. |
+| `eliminarDevolucion()` | Elimina una devolución de la base de datos y la quita de la tabla `devoluciones`. |
+| `EntrarActionPerformed()` | Combina las verificaciones de correo y contraseña en una sola consulta SQL y gestiona la conexión de manera más eficiente. |
+| `SalirActionPerformed()` | Maneja la acción de salir de la aplicación. |
+| `validarIdCajero()` | Define una consulta SQL para contar los registros en la tabla `Cajeros` con el ID especificado. |
+| `consultar()` | Consulta y muestra datos de la tabla `Zapato`. |
+| `actualizarCampos()` | Actualiza los campos de texto con datos del zapato seleccionado por su ID de estilo. |
+| `actualizarStock()` | Actualiza el stock de un zapato específico por modelo. |
+| `devolverStock()` | Devuelve una cantidad específica de stock de un zapato por modelo. |
+| `actualizarTotalPagar()` | Calcula el total a pagar sumando los valores de una columna específica en la tabla y lo muestra en un campo de texto. |
+| `generarNotaDeVenta()` | Genera una nota de venta con los datos de la tabla, incluyendo fecha, email del cajero y detalles de los productos. |
+| `generarPDF()` | Genera un archivo PDF con el contenido proporcionado. |
+| `generarNombreUnico()` | Genera un nombre de archivo único añadiendo un contador al nombre base. |
+| `enviarCorreo()` | Envía un correo electrónico con el archivo PDF adjunto. |
+| `guardarNotaEnArchivo()` | Guarda una nota en un archivo de texto. |
+| `insertarTransaccion()` | Inserta una transacción en la base de datos y retorna el ID generado. |
+| `obtenerEmailCajero()` | Obtiene el correo electrónico de un cajero dado su ID. |
+| `realizarCorteCaja()` | Realiza un corte de caja para una fecha específica, sumando las transacciones por forma de pago. |
+| `cargarTransaccionesEnTabla()` | Carga las transacciones en una tabla desde la base de datos. |
+| `realizarCorteCaja1()` | Similar al método `realizarCorteCaja`, con reconexión a la base de datos si es necesario. |
+| `getNextTransactionId()` | Obtiene el próximo ID de transacción disponible. |
+| `realizarDevolucion()` | Realiza una devolución de una transacción específica. |
+| `verificarInventario()` | Verifica el inventario de zapatos y revisa sus cantidades. |
+| `enviarAlerta()` | Envía una alerta de inventario bajo y ofrece reabastecer el producto. |
+| `iniciarMonitoreoInventario()` | Inicia un monitoreo periódico del inventario cada minuto. |
+| `generarReporteZapatosVendidos()` | Genera un reporte de los zapatos vendidos, ordenado por la cantidad vendida. |
+| `reabastecerProducto()` | Reabastece el stock de un producto específico. |
+| `cargarTransaccionesEnTablaPorFecha()` | Carga las transacciones en una tabla filtrando por fecha. |
+| `buscarModelosMasVendidos()` | Busca los modelos más vendidos en un mes y año específicos. |
+| `Verificar Selección()` | Comprueba si hay un empleado seleccionado en la tabla. |
+| `Obtener Datos del Empleado()` | Recopila los datos del empleado seleccionado. |
+| `Consultar Datos Adicionales()` | Realiza una consulta SQL para obtener información adicional (correo, salario, puesto) usando el RFC del empleado. |
 
 
 ## Diagrama Entidad-Relacional
