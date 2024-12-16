@@ -58,7 +58,126 @@ Los usos de este sistema son específicos y concretos, ya que se ha definido dir
 | `JMonthChooser`         | Permite seleccionar un mes específico.                                                               |
 | `JYearChooser`          | Permite verificar un año en específico.                                                              |
 | `JComboBox`             | Permite al usuario seleccionar una opción de una lista desplegable.                                  |
+## Metodos
 
-## Diagrama Entidad-Relacional A continuación, se muestra el diagrama entidad-relacional que ilustra las tablas y relaciones del sistema:
-![Diagrama Entidad-Relacional](imagenes-readme/entidad_relacion.png) 
+
+
+## Diagrama Entidad-Relacional
+A continuación, se muestra el diagrama entidad-relacional que ilustra las tablas y relaciones del sistema:
+![Diagrama Entidad-Relacional](imagenes-readme/entidad-relacion.png) 
+
+### Tablas y Relaciones
+
+#### Tabla: Empleados
+| Columna             | Tipo            |
+|---------------------|-----------------|
+| RFC                 | VARCHAR(30)     |
+| nombre              | VARCHAR(50)     |
+| Apellido_Paterno    | VARCHAR(50)     |
+| Apellido_materno    | VARCHAR(50)     |
+| correo              | VARCHAR(100)    |
+| salario             | DOUBLE          |
+| Usuario             | VARCHAR(50)     |
+| Puesto              | VARCHAR(50)     |
+| FechaNacimiento     | VARCHAR(45)     |
+
+#### Tabla: Zapato
+| Columna             | Tipo            |
+|---------------------|-----------------|
+| Estilo              | INT PRIMARY KEY |
+| Modelo              | VARCHAR(50)     |
+| Marca               | VARCHAR(50)     |
+| Color               | VARCHAR(50)     |
+| Talla               | DOUBLE          |
+| Cantidad            | INT             |
+| precio              | DOUBLE          |
+| Tipo                | VARCHAR(100)    |
+
+#### Tabla: Cajeros
+| Columna             | Tipo            |
+|---------------------|-----------------|
+| ID                  | INT PRIMARY KEY |
+| Email               | VARCHAR(45)     |
+| Contrasena          | VARCHAR(45)     |
+| EmpleadoID          | VARCHAR(45)     |
+
+#### Tabla: Administrador
+| Columna             | Tipo            |
+|---------------------|-----------------|
+| ID                  | INT PRIMARY KEY |
+| Email               | VARCHAR(45)     |
+| Contrasena          | VARCHAR(45)     |
+
+#### Tabla: Cliente
+| Columna             | Tipo            |
+|---------------------|-----------------|
+| ID                  | INT PRIMARY KEY |
+| nombre              | VARCHAR(50)     |
+| Apellido_Paterno    | VARCHAR(50)     |
+| Apellido_materno    | VARCHAR(50)     |
+| Numero_Telefono     | VARCHAR(100)    |
+
+#### Tabla: Devoluciones
+| Columna             | Tipo            |
+|---------------------|-----------------|
+| id                  | INT PRIMARY KEY |
+| id_transaccion      | INT             |
+| modelo              | VARCHAR(250)    |
+| Cantidad            | INT             |
+| precio              | DOUBLE          |
+| fecha_hora          | TIMESTAMP       |
+
+#### Tabla: Proveedor
+| Columna             | Tipo            |
+|---------------------|-----------------|
+| RFC                 | VARCHAR(30)     |
+| Nombre              | VARCHAR(60)     |
+| Apellido_Paterno    | VARCHAR(50)     |
+| Apellido_materno    | VARCHAR(50)     |
+| Numero_Telefono     | VARCHAR(20)     |
+| Email               | VARCHAR(90)     |
+| NumeroLote          | VARCHAR(20)     |
+| Fecha               | VARCHAR(50)     |
+
+### Funcionalidades Adicionales
+
+| Funcionalidad                     | Descripción                                                                                 |
+|-----------------------------------|---------------------------------------------------------------------------------------------|
+| Administración de Empleados y Productos | Solo los empleados con tipo 'Administrador' pueden agregar nuevos empleados o productos. |
+| Visualización del Inventario      | Todos los empleados pueden visualizar el inventario de productos (Zapato).                 |
+| Vista del Corte de Caja           | Los empleados pueden ver el corte de caja, que muestra las ventas realizadas.              |
+
+## uso.
+1.- iniciar sesión como cajero o como administrador
+![inicio cajero](imagenes-readme/1.png) 
+2.- pantalla de inicio de un cajero, función de generar las ventas.
+![inicio cajero2](imagenes-readme/2.png) 
+3.- segundo panel de un cajero, donde se puede generar un corte de caja de las ventas
+![cajero corte de caja](imagenes-readme/3.png) 
+4.-tercer panel nos muestra la opción de generar una devolución para que se vuelva a agregar el producto devuelto a la base de datos.
+![devoluciones](imagenes-readme/4.png) 
+5.- cierto panel nos da la opción de visualizar los productos vendidos en un periodo de tiempo que según sea solicitado 
+![ventas zapatos](imagenes-readme/5.png) 
+6.- quinto panel se basa en el inventario por lo que podemos visualizar todos los productos, sus datos y características las cuales están almacenadas en la base de datos
+![inventario](imagenes-readme/6.png) 
+7.- vista del inicio de session de un administrador y sus diversas funciones.
+![inicio admin](imagenes-readme/7.png) 
+8.- validacion de campos para dar de alta a un empleado nuevo 
+![validacion empleado](imagenes-readme/8.png) 
+9.- modificacion de los datos de un cliente existente
+![modificacion](imagenes-readme/9.png) 
+10.- credenciales de un cajero por si se necesita modificar el inicio de un cajero o empleado
+![credenciales](imagenes-readme/10.png) 
+11.- visualizacion del inventario que nos puede conducir a dar de alta un nuevo producto o eliminarlo de la base de datos por inexistencia en caso de que no se hayan recibido un nuevo lote en un determinado tiempo o cuando de cero.
+![inventario admin](imagenes-readme/11.png) 
+
+
+## video demostrativo 
+https://youtu.be/ijwb3YIN12o 
+
+
+
+
+
+
 
