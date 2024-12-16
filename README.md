@@ -227,8 +227,9 @@ A continuación, se muestra el diagrama entidad-relacional que ilustra las tabla
 
 ## video demostrativo 
 https://youtu.be/ijwb3YIN12o 
-## Ekabiracion
+## Elaboración
 -Edith Esmeralda Pérez Martínez
+
 -Luis Enrrique Pinto Zarate
 
 
