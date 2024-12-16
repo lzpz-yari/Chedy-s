@@ -59,5 +59,6 @@ Los usos de este sistema son específicos y concretos, ya que se ha definido dir
 | `JYearChooser`          | Permite verificar un año en específico.                                                              |
 | `JComboBox`             | Permite al usuario seleccionar una opción de una lista desplegable.                                  |
 
-
+## Diagrama Entidad-Relacional A continuación, se muestra el diagrama entidad-relacional que ilustra las tablas y relaciones del sistema:
+![Diagrama Entidad-Relacional](imagenes-readme/entidad_relacion.png) 
 
