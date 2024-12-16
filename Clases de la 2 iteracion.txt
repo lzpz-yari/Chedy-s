@@ -1,0 +1,11 @@
+segunda iteracion,
+inventario
+AltaProducto
+BuscarProducto
+Proveedor
+Buscar Proveedor
+ALtaProveedor
+
+
+
+
