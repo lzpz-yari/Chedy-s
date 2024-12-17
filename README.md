@@ -201,67 +201,58 @@ A continuación, se muestra el diagrama entidad-relacional que ilustra las tabla
 | Vista del Corte de Caja           | Los empleados pueden ver el corte de caja, que muestra las ventas realizadas.              |
 
 ## uso.
-1.- iniciar sesión como cajero o como administrador.
-dentro de la ventana de inicio podemos visualizar lo que son 2 apartados, para iniciar como un administrador o un cajero esto con el fin de poder separar lo roles independientes de cada uno.
-dentro de ambos inicios tenemos directamente el registro de verificación de inicio lo que es el correo y su contraseña única además la opción de terminar o cerrar el sistema.
-dentro del inicio de un cajero además de lo antes mencionado tenemos un botón con respuesta a recuperar la contraseña en caso de olvido o extravió, por lo que se plantea la recuperación de la contraseña mostrando en una ventana emergente, además de ello, la contraseña es enviada al correo del cajero.
+1. Inicio de sesión como cajero o como administrador.
+Dentro de la ventana de inicio, podemos visualizar dos apartados: uno para iniciar sesión como administrador y otro como cajero. Esto tiene como fin separar los roles independientes de cada uno. En ambos inicios de sesión, se solicita el correo y la contraseña única del usuario, además de ofrecer la opción de cerrar el sistema. En el inicio de sesión de un cajero, además de lo mencionado, hay un botón para recuperar la contraseña en caso de olvido o extravío, lo cual se realiza mediante una ventana emergente y el envío de la nueva contraseña al correo del cajero.
 
 ![inicio cajero](imagenes-readme/1.png) 
 
-2.- pantalla de inicio de un cajero, función de generar las ventas.
-dentro de esta ventana se visualiza los patrones de búsqueda donde podemos hacer una búsqueda del producto solicitado de acuerdo a las especificaciones que el cliente pida, de ahí si este se cumple de acuerdo a las especificaciones podemos agregarlo a la lista de compra del cliente en caso que se requiera otro producto, de ahí dentro de la parte inferior nos aparece el total a pagar y podemos insertar la cantidad de dinero que el cliente da y así se calcula si se necesita cambio o no, luego el ticket es enviado a un correo electrónico proporcionado por e cliente si este así lo requiere. 
+2. Pantalla de inicio de un cajero: función de generar ventas.
+Dentro de esta ventana se visualizan los patrones de búsqueda, donde se puede buscar el producto solicitado de acuerdo a las especificaciones del cliente. Si se cumple con las especificaciones, el producto puede añadirse a la lista de compra del cliente. En la parte inferior se muestra el total a pagar, y se puede ingresar la cantidad de dinero proporcionada por el cliente para calcular el cambio, si es necesario. El ticket de compra se envía al correo electrónico del cliente si este así lo requiere.
 
 ![inicio cajero2](imagenes-readme/2.png) 
 
-3.- segundo panel de un cajero, donde se puede generar un corte de caja de las ventas
-
-Dentro de la pagina del corte de caja podemos hacer las cuentas de lo vendido en un determinado tiempo, visualizando por fecha para llevar un mejor control, de igual manera todo aquello que queremos ver se muestras dentro de una tabla el cual nos da un mejor manejo de la información.
+3.. Segundo panel de un cajero: generar un corte de caja de las ventas.
+En la página del corte de caja se pueden calcular las ventas realizadas en un determinado periodo, visualizando por fecha para llevar un mejor control. Todo lo que se desea visualizar se muestra en una tabla, lo cual facilita el manejo de la información.
 
 ![cajero corte de caja](imagenes-readme/3.png) 
 
-4.-tercer panel nos muestra la opción de generar una devolución para que se vuelva a agregar 
-el producto devuelto a la base de datos.
-Dara generar una devolucion es importante el ticket por lo que siempre es mejor que un cliente solicite su ticket en caso que requiera una devolucion, para ello se necesita el numero de ticket y la cantidad de articulos a devolver  para que estos datos sean eliminados del registro de ventas y los productos sean agregados nuevamente a la base de datos.
+4.-Tercer panel: opción de generar una devolución.
+En este panel se puede procesar la devolución de productos, añadiéndolos de nuevo a la base de datos. Para generar una devolución es importante tener el ticket de compra, por lo que es recomendable que el cliente lo solicite en caso de necesitar una devolución. Se requiere el número de ticket y la cantidad de artículos a devolver para eliminarlos del registro de ventas y añadir los productos nuevamente a la base de datos.
 
 ![devoluciones](imagenes-readme/4.png) 
 
-5.- cierto panel nos da la opción de visualizar los productos vendidos en un periodo de 
-tiempo que según sea solicitado 
-Dentro de este panel podemos ver los productos que mas se han vendido dentro de la empresa, sin embargo nos muestra un top 10 de estos mas vendidos de forma ordenada, con el fin de que sea visualizada los gustos mas comunes en la comunidad. 
-En el panel ademas podemos ver estos datos por tiempo, lo cual podemos tener informacion de gustos de clientes de acuerdo a temporadas.
+5.- Visualización de productos vendidos en un periodo específico.
+En este panel se pueden ver los productos más vendidos en la empresa, mostrando un top 10 de forma ordenada para visualizar las preferencias de los clientes. Además, se pueden ver estos datos por periodos, obteniendo información sobre las preferencias de los clientes según las temporadas.
 
 ![ventas zapatos](imagenes-readme/5.png) 
 
-6.- quinto panel se basa en el inventario por lo que podemos visualizar todos los productos, sus datos y características las cuales están almacenadas en la base de datos
-En el inventario podemos buscar los productos usando las espesificaciones, ya sea buscar por codigo o alguna otra caracteristica con el fin de tener un order y visualizacion mejor de lo que esta dentro de la tienda. 
-Igual que podemos ver los datos o productos  las veces que sean necesarias.
+6.- Panel de inventario.
+En este panel se pueden visualizar todos los productos, sus datos y características almacenadas en la base de datos. Se puede buscar productos utilizando diversas especificaciones, ya sea por código u otra característica, para tener un mejor orden y visualización del inventario. También se pueden ver los datos de los productos las veces que sea necesario.
 
 ![inventario](imagenes-readme/6.png) 
 
-7.- vista del inicio de session de un administrador y sus diversas funciones.
-Dentro de la vista principal de un administrador tenemos distintos botones los cuales nos dirigen a diversas funciones, de primera vista tenemos los botones principales están alta empleado, modificación empleada, credenciales de los cajeros.
-Los botones directos de agregar cajero nos permiten seleccionar un cajero que se visualiza en su tabla de empleados, para que este sea implementado como un cajero y obtenga su acceso al sistema, pues puede haber empleados, pero no todos son cajeros.
+7.- Vista de inicio de sesión de un administrador y sus funciones.
+En la vista principal de un administrador hay varios botones que dirigen a diversas funciones. Entre los principales se encuentran los botones de alta de empleados, modificación de empleados y credenciales de los cajeros. Los botones para agregar cajeros permiten seleccionar un empleado de la tabla de empleados para darle acceso al sistema como cajero, ya que no todos los empleados son cajeros.
 
 ![inicio admin](imagenes-readme/7.png) 
 
-8.- Validacion de campos para dar de alta a un empleado nuevo.
-Los campos a rellenar son Nombre, apellido paterno, apellido materno, fecha de nacimiento esta siendo empleada por un boton que otorga la visualizacion de los meses y año, correo, salario y el puesto que esta siendo implementado, por otro lado la validacion de campo RFC es creado automaticamente de manera qur este se tomara de acuerdo a los datos antes proporcionados.
+8.- Validación de campos para dar de alta a un empleado nuevo.
+Los campos a rellenar son: nombre, apellido paterno, apellido materno, fecha de nacimiento (seleccionada mediante un botón con visualización de meses y años), correo, salario y puesto. La validación del campo RFC se realiza automáticamente según los datos proporcionados.
 
 ![validacion empleado](imagenes-readme/8.png) 
 
-9.- Modificacion de los datos de un empleado existente
-antes se bede seleccionar un empleado, dentro de la ventana emergente podemos modificar estos datos para que sea una forma mas facil de manejar o registrar, por lo que los datos a modificar son, RFC,nombre, apellido paterno, apellido materno, correo, sueldo o su puesto.
-esta ventana no modifica nada sin que el usuario lo decida.
+9.-Modificación de datos de un empleado existente.
+Para modificar los datos de un empleado, primero se debe seleccionar al empleado en la ventana emergente. Los datos que se pueden modificar son: RFC, nombre, apellido paterno, apellido materno, correo, sueldo y puesto. Esta ventana no modifica nada sin que el usuario lo decida.
 
 ![modificacion](imagenes-readme/9.png) 
 
-10.- credenciales de un cajero por si se necesita modificar el inicio de un cajero o empleado
-con el fin de saber como inicia al sisitema este empleado o cajero, ademas de ello podemos eliminarlo.
+10.- Modificación de credenciales de un cajero.
+Permite modificar las credenciales de un cajero o empleado para conocer cómo inicia sesión en el sistema. También se puede eliminar al cajero o empleado.
 
 ![credenciales](imagenes-readme/10.png) 
 
-11.- Visualización del inventario que nos puede conducir a dar de alta un nuevo producto o eliminarlo de la base de datos por inexistencia en caso de que no se hayan recibido un nuevo lote en un determinado tiempo o cuando de cero.
-En este mismo panel vemos que podemos obtener los datos de diversos proveedores así ya tenemos detalle de aquellos lotes que se cargan a la base de datos y asi ver sus datos, ademas de ello podemos agregar un nuevo proveedor o buscar para saber la relación que se tiene con este.
+11.- Visualización del inventario y gestión de productos.
+En este panel se puede dar de alta un nuevo producto o eliminarlo de la base de datos en caso de inexistencia, por ejemplo, si no se ha recibido un nuevo lote en un tiempo determinado. También se pueden obtener datos de diversos proveedores, visualizar los lotes cargados en la base de datos y agregar nuevos proveedores o buscar los existentes para ver la relación con ellos.
 
 ![inventario admin](imagenes-readme/11.png) 
 
